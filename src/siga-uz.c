@@ -308,7 +308,7 @@ void lancar_notas(Docente docente, Estudante estudantes[], int qtdEstudantes) {
 bool imprimirNotas(Estudante estudantes[], int qtdEstudantes, int idDisciplina) {
     FILE *txt_inscritos;
 
-    txt_inscritos = fopen("lista_incritos.txt", "w");
+    txt_inscritos = fopen("lista_incritos.txt", "+a");
     if (txt_inscritos != NULL) {
 		fprintf(txt_inscritos, "Nome de estudante\n");        
 
